@@ -1,0 +1,219 @@
+<html>
+<body>
+	<h3>Telecom Churn Predictor</h3>
+
+<div>
+<form action="/result" method="POST">
+	<label for="Senior Citizen">Senior Citizen</label>
+	<select id="Senior Citizen" name="Senior Citizen">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+	<label for="Partner">Partner</label>
+	<select id="Partner" name="Partner">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Dependents">Dependents</label>
+	<select id="Dependents" name="Dependents">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+        <br>
+        <label for="Paperless Billing">Paperless Billing</label>
+	<select id="Paperless Billing" name="Paperless Billing">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Monthly Charges">Monthly Charges</label>
+        <input type="text" id="Monthly Charges" name="Monthly Charges">
+        <br>
+        <label for="Total Charges">Total Charges</label>
+        <input type="text" id="Total Charges" name="Total Charges">
+        <br>
+        <label for="CLTV">CLTV</label>
+        <input type="text" id="CLTV" name="CLTV">
+        <br>
+        <label for="los_angeles_distance">los_angeles_distance</label>
+        <input type="text" id="los_angeles_distance" name="los_angeles_distance">
+        <br>
+        <label for="san_francisco_distance">san_francisco_distance</label>
+        <input type="text" id="san_francisco_distance" name="san_francisco_distance">
+        <br>
+	<label for="Loyalty">Loyalty</label>
+	<select id="Loyalty" name="Loyalty">
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	</select>
+	<br>
+	<label for="not_Help_Score">not_Help_Score</label>
+	<select id="not_Help_Score" name="not_Help_Score">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	</select>
+	<br>
+        <label for="Multiple Lines_No">Multiple Lines_No</label>
+	<select id="Multiple Lines_No" name="Multiple Lines_No">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Multiple Lines_No phone service">Multiple Lines_No phone service</label>
+	<select id="Multiple Lines_No phone service" name="Multiple Lines_No phone service">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Multiple Lines_Yes">Multiple Lines_Yes</label>
+	<select id="Multiple Lines_Yes" name="Multiple Lines_Yes">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Internet Service_DSL">Internet Service_DSL</label>
+	<select id="Internet Service_DSL" name="Internet Service_DSL">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Internet Service_Fiber optic">Internet Service_Fiber optic</label>
+	<select id="Internet Service_Fiber optic" name="Internet Service_Fiber optic">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Internet Service_No">Internet Service_No</label>
+	<select id="Internet Service_No" name="Internet Service_No">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Online Security_No">Online Security_No</label>
+	<select id="Online Security_No" name="Online Security_No">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Online Security_Yes">Online Security_Yes</label>
+	<select id="Online Security_Yes" name="Online Security_Yes">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Online Backup_No">Online Backup_No</label>
+	<select id="Online Backup_No" name="Online Backup_No">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Online Backup_Yes">Online Backup_Yes</label>
+	<select id="Online Backup_Yes" name="Online Backup_Yes">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Device Protection_No">Device Protection_No</label>
+	<select id="Device Protection_No" name="Device Protection_No">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Device Protection_Yes">Device Protection_Yes</label>
+	<select id="Device Protection_Yes" name="Device Protection_Yes">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Tech Support_No">Tech Support_No</label>
+	<select id="Tech Support_No" name="Tech Support_No">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Tech Support_Yes">Tech Support_Yes</label>
+	<select id="Tech Support_Yes" name="Tech Support_Yes">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Streaming TV_No">Streaming TV_No</label>
+	<select id="Streaming TV_No" name="Streaming TV_No">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Streaming TV_Yes">Streaming TV_Yes</label>
+	<select id="Streaming TV_Yes" name="Streaming TV_Yes">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Streaming Movies_No">Streaming Movies_No</label>
+	<select id="Streaming Movies_No" name="Streaming Movies_No">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Streaming Movies_Yes">Streaming Movies_Yes</label>
+	<select id="Streaming Movies_Yes" name="Streaming Movies_Yes">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Contract_Month-to-month">Contract_Month-to-month</label>
+	<select id="Contract_Month-to-month" name="Contract_Month-to-month">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Contract_One year">Contract_One year</label>
+	<select id="Contract_One year" name="Contract_One year">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Contract_Two year">Contract_Two year</label>
+	<select id="Contract_Two year" name="Contract_Two year">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Payment Method_Bank transfer (automatic)">Payment Method_Bank transfer (automatic)</label>
+	<select id="Payment Method_Bank transfer (automatic)" name="Payment Method_Bank transfer (automatic)">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Payment Method_Credit card (automatic)">Payment Method_Credit card (automatic)</label>
+	<select id="Payment Method_Credit card (automatic)" name="Payment Method_Credit card (automatic)">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Payment Method_Electronic check">Payment Method_Electronic check</label>
+	<select id="Payment Method_Electronic check" name="Payment Method_Electronic check">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+        <label for="Payment Method_Mailed check">Payment Method_Mailed check</label>
+	<select id="Payment Method_Mailed check" name="Payment Method_Mailed check">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	</select>
+	<br>
+	<input type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>
