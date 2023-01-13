@@ -73,7 +73,7 @@ def get_data():
     
     return pd.DataFrame.from_dict(d_dict, orient='columns')
 
-@app.route('/submit', methods=['POST'])
+@app.route('/send', methods=['POST'])
 def show_data():
     df = get_data()
     prediction = gradientboost.predict(df)
