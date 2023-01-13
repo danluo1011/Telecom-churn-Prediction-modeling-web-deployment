@@ -18,58 +18,58 @@ def home():
     return render_template("homepage.html")
 
 def get_data():
-    Senior Citizen = request.form.get('Senior Citizen')
+    SeniorCitizen = request.form.get('Senior Citizen')
     Partner = request.form.get('Partner')
     Dependents = request.form.get('Dependents')
-    Paperless Billing = request.form.get('Paperless Billing')
-    Monthly Charges = request.form.get('Monthly Charges')
-    Total Charges = request.form.get('Total Charges')
+    PaperlessBilling = request.form.get('Paperless Billing')
+    MonthlyCharges = request.form.get('Monthly Charges')
+    TotalCharges = request.form.get('Total Charges')
     CLTV = request.form.get('CLTV')
     los_angeles_distance = request.form.get('los_angeles_distance')
     san_francisco_distance = request.form.get('san_francisco_distance')
     Loyalty = request.form.get('Loyalty')
     not_Help_Score = request.form.get('not_Help_Score')
-    Multiple Lines_No = request.form.get('Multiple Lines_No')
-    Multiple Lines_No phone service = request.form.get('Multiple Lines_No phone service')
-    Multiple Lines_Yes = request.form.get('Multiple Lines_Yes')
-    Internet Service_DSL = request.form.get('Internet Service_DSL')
-    Internet Service_Fiber optic = request.form.get('Internet Service_Fiber optic')
-    Internet Service_No = request.form.get('Internet Service_No')
-    Online Security_No = request.form.get('Online Security_No')
-    Online Security_Yes = request.form.get('Online Security_Yes')
-    Online Backup_No = request.form.get('Online Backup_No')
-    Online Backup_Yes = request.form.get('Online Backup_Yes')
-    Device Protection_No = request.form.get('Device Protection_No')
-    Device Protection_Yes = request.form.get('Device Protection_Yes')
-    Tech Support_No = request.form.get('Tech Support_No')
-    Tech Support_Yes = request.form.get('Tech Support_Yes')
-    Streaming TV_No = request.form.get('Streaming TV_No')
-    Streaming TV_Yes = request.form.get('Streaming TV_Yes')
-    Streaming Movies_No = request.form.get('Streaming Movies_No')
-    Streaming Movies_Yes = request.form.get('Streaming Movies_Yes')
-    Contract_Month-to-month = request.form.get('Contract_Month-to-month')
-    Contract_One year = request.form.get('Contract_One year')
-    Contract_Two year = request.form.get('Contract_Two year')
-    Payment Method_Bank transfer (automatic) = request.form.get('Payment Method_Bank transfer (automatic)')
-    Payment Method_Credit card (automatic) = request.form.get('Payment Method_Credit card (automatic)')
-    Payment Method_Electronic check = request.form.get('Payment Method_Electronic check')
-    Payment Method_Mailed check = request.form.get('Payment Method_Mailed check')
+    MultipleLines_No = request.form.get('Multiple Lines_No')
+    MultipleLines_Nophoneservice = request.form.get('Multiple Lines_No phone service')
+    MultipleLines_Yes = request.form.get('Multiple Lines_Yes')
+    InternetService_DSL = request.form.get('Internet Service_DSL')
+    InternetService_Fiberoptic = request.form.get('Internet Service_Fiber optic')
+    InternetService_No = request.form.get('Internet Service_No')
+    OnlineSecurity_No = request.form.get('Online Security_No')
+    OnlineSecurity_Yes = request.form.get('Online Security_Yes')
+    OnlineBackup_No = request.form.get('Online Backup_No')
+    OnlineBackup_Yes = request.form.get('Online Backup_Yes')
+    DeviceProtection_No = request.form.get('Device Protection_No')
+    DeviceProtection_Yes = request.form.get('Device Protection_Yes')
+    TechSupport_No = request.form.get('Tech Support_No')
+    TechSupport_Yes = request.form.get('Tech Support_Yes')
+    StreamingTV_No = request.form.get('Streaming TV_No')
+    StreamingTV_Yes = request.form.get('Streaming TV_Yes')
+    StreamingMovies_No = request.form.get('Streaming Movies_No')
+    StreamingMovies_Yes = request.form.get('Streaming Movies_Yes')
+    Contract_Month_to_month = request.form.get('Contract_Month-to-month')
+    Contract_Oneyear = request.form.get('Contract_One year')
+    Contract_Twoyear = request.form.get('Contract_Two year')
+    PaymentMethod_Banktransfer = request.form.get('Payment Method_Bank transfer (automatic)')
+    PaymentMethod_Creditcard = request.form.get('Payment Method_Credit card (automatic)')
+    PaymentMethod_Electroniccheck = request.form.get('Payment Method_Electronic check')
+    PaymentMethod_Mailedcheck = request.form.get('Payment Method_Mailed check')
     
-    d_dict = {'Senior Citizen': [Senior Citizen], 'Partner': [Partner], 'Dependents': [Dependents],
-              'Paperless Billing': [Paperless Billing], 'Monthly Charges': [Monthly Charges], 'Total Charges': [Total Charges],
+    d_dict = {'Senior Citizen': [SeniorCitizen], 'Partner': [Partner], 'Dependents': [Dependents],
+              'Paperless Billing': [PaperlessBilling], 'Monthly Charges': [MonthlyCharges], 'Total Charges': [TotalCharges],
               'CLTV': [CLTV], 'los_angeles_distance': [los_angeles_distance], 'san_francisco_distance': [san_francisco_distance],
-              'Loyalty': [Loyalty], 'not_Help_Score': [not_Help_Score], 'Multiple Lines_No': [Multiple Lines_No],
-              'Multiple Lines_No phone service': [Multiple Lines_No phone service], 'Multiple Lines_Yes': [Multiple Lines_Yes],
-              'Internet Service_DSL': [Internet Service_DSL],'Internet Service_Fiber optic': [Internet Service_Fiber optic],
-              'Internet Service_No': [Internet Service_No], 'Online Security_No': [Online Security_No], 'Online Security_Yes': [Online Security_Yes],
-              'Online Backup_No': [Online Backup_No], 'Online Backup_Yes': [Online Backup_Yes],'Device Protection_No': [Device Protection_No],
-              'Device Protection_Yes': [Device Protection_Yes], 'Tech Support_No': [Tech Support_No], 'Tech Support_Yes': [Tech Support_Yes],
-              'Streaming TV_No': [Streaming TV_No], 'Streaming TV_Yes': [Streaming TV_Yes], 'Streaming Movies_No': [Streaming Movies_No],
-              'Streaming Movies_Yes': [Streaming Movies_Yes], 'Contract_Month-to-month': [Contract_Month-to-month], 'Contract_One year': [Contract_One year],
-              'Contract_Two year': [Contract_Two year], 'Payment Method_Bank transfer (automatic)': [Payment Method_Bank transfer (automatic)], 
-              'Payment Method_Credit card (automatic)': [Payment Method_Credit card (automatic)],
-              'Payment Method_Electronic check': [Payment Method_Electronic check],
-              'Payment Method_Mailed check': [Payment Method_Mailed check]}
+              'Loyalty': [Loyalty], 'not_Help_Score': [not_Help_Score], 'Multiple Lines_No': [MultipleLines_No],
+              'Multiple Lines_No phone service': [MultipleLines_Nophoneservice], 'Multiple Lines_Yes': [MultipleLines_Yes],
+              'Internet Service_DSL': [InternetService_DSL],'Internet Service_Fiber optic': [InternetService_Fiberoptic],
+              'Internet Service_No': [InternetService_No], 'Online Security_No': [OnlineSecurity_No], 'Online Security_Yes': [OnlineSecurity_Yes],
+              'Online Backup_No': [OnlineBackup_No], 'Online Backup_Yes': [OnlineBackup_Yes],'Device Protection_No': [DeviceProtection_No],
+              'Device Protection_Yes': [DeviceProtection_Yes], 'Tech Support_No': [TechSupport_No], 'Tech Support_Yes': [TechSupport_Yes],
+              'Streaming TV_No': [StreamingTV_No], 'Streaming TV_Yes': [StreamingTV_Yes], 'Streaming Movies_No': [StreamingMovies_No],
+              'Streaming Movies_Yes': [StreamingMovies_Yes], 'Contract_Month-to-month': [Contract_Month_to_month], 'Contract_One year': [Contract_Oneyear],
+              'Contract_Two year': [Contract_Twoyear], 'Payment Method_Bank transfer (automatic)': [PaymentMethod_Banktransfer], 
+              'Payment Method_Credit card (automatic)': [PaymentMethod_Creditcard],
+              'Payment Method_Electronic check': [PaymentMethod_Electroniccheck],
+              'Payment Method_Mailed check': [PaymentMethod_Mailedcheck]}
     
     return pd.DataFrame.from_dict(d_dict, orient='columns')
 
@@ -81,7 +81,7 @@ def show_data():
     if prediction == 0:
         outcome = 'Non-Churner'
 
-    return render_template('results.html', result = outcome)
+    return render_template('result.html', result = outcome)
 
 
 
