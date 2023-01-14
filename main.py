@@ -81,7 +81,7 @@ def result():
     if prediction == 0:
         outcome = 'Non-Churner'
 
-    return render_template('results.html', result = outcome)
+    return render_template('results.html', final = outcome)
 
 
 if __name__=="__main__":
