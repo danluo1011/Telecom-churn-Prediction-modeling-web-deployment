@@ -73,16 +73,15 @@ def get_data():
     
     return pd.DataFrame.from_dict(d_dict, orient='columns')
 
-@app.route('/send', methods=['POST'])
-def show_data():
+@app.route('/result', methods=['POST'])
+def result():
     df = get_data()
     prediction = gradientboost.predict(df)
     outcome = 'Churner'
     if prediction == 0:
         outcome = 'Non-Churner'
 
-    return render_template('result.html', result = outcome)
-
+    return render_template('results.html', result = outcome)
 
 
 if __name__=="__main__":
